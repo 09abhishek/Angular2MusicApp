@@ -1,0 +1,41 @@
+Spring 5 ... code Dump
+
+
+
+
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+
+
+@Min(value = 0, message="must be > greater than 0 letters ")
+	@Max(value = 6, message="must be < than 7 letters")
+
+
+beanLifeCycleapplicationContext.xml
+bean-scope-applicationContext.xml
+
+https://github.com/09abhishek/Spring-5-IOC-DI.git
+
+
+
+mysql :
+https://dev.mysql.com/downloads/
+
+software:
+MySQL Community Server 
+
+
+
+
+Session getsession = factory.getCurrentSession();
+			session.beginTransaction();
+			Student myStudent =getsession.get(Student.class, student1.getId());
+			System.out.println(myStudent);
+			getsession.getTransaction().commit();
+
+
+convertintouppercase
+
+"from Student s where s.lastName='Gautam'"
+"from Student s where"+" s.lastName='Gautam' OR s.firstName='Abhishek'"
